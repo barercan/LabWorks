@@ -71,6 +71,9 @@ if (isset($_POST['p3'])) {
       break;
     case '/':
       $result = $number1/$number2;
+      if ($number2 == 0) {
+        $result = "Not defined. Please select the denominator any number other than zero.";
+      }
       echo "$result";
       break;
     default:
