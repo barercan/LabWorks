@@ -6,18 +6,17 @@
   </head>
   <body>
     <form class="" action="IT306Lab4.php" method="post">
-      <input type="number" name="num" value="50">
-      <input type="submit" name="Gün" value="Gün Bul">
-      <input type="submit" name="2ve3" value="2ve3">
-      <input type="submit" name="part3" value="Part3">
-      <input type="submit" name="part4" value="Part4">
+      <input type="number" name="num" value="5">
+      <input type="submit" name="p1" value="Part1">
+      <input type="submit" name="p2" value="Part2">
+      <input type="submit" name="p3" value="Part3">
     </form>
   </body>
 </html>
 
 <?php
 //part1
-if (isset($_POST['Gün'])) {
+if (isset($_POST['p1'])) {
   $number = $_POST['num'];
   switch ($number+1) {
     case '1':
@@ -34,8 +33,16 @@ if (isset($_POST['Gün'])) {
       echo "Cumartesi";
     case '7':
       echo "Pazar";
+      break;
     default:
-      echo "Please enter 1-7";
+      echo "";
   }
+}
+//part1
+if (isset($_POST['p2'])) {
+  $number = $_POST['num'];
+  $area = 2*M_PI*$number;
+  $circumference = M_PI*$number*$number;
+  echo "Area is: $area, Circumreferance is $circumference";
 }
  ?>
