@@ -25,19 +25,19 @@ if (isset($_POST['p1'])) {
   $number = $_POST['num'];
   switch ($number+1) {
     case '1':
-      echo "Pazartesi";
+      echo "Pazartesi<br>";
     case '2':
       echo "Salı";
     case '3':
-      echo "Çarşamba";
+      echo "Çarşamba<br>";
     case '4':
-      echo "Perşembe";
+      echo "Perşembe<br>";
     case '5':
-      echo "Cuma";
+      echo "Cuma<br>";
     case '6':
-      echo "Cumartesi";
+      echo "Cumartesi<br>";
     case '7':
-      echo "Pazar";
+      echo "Pazar<br>";
       break;
     default:
       echo "";
@@ -59,8 +59,20 @@ if (isset($_POST['p3'])) {
   switch ($op) {
     case '+':
       $result = $number1+$number2;
+      echo "$result";
       break;
-
+    case '-':
+      $result = $number1-$number2;
+      echo "$result";
+      break;
+    case '*':
+      $result = $number1*$number2;
+      echo "$result";
+      break;
+    case '/':
+      $result = $number1/$number2;
+      echo "$result";
+      break;
     default:
       echo "$op";
       break;
