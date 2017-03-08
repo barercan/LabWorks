@@ -8,10 +8,18 @@
   <body>
     <table>
       <tr>
-        <td id="1" style="width: 120px; height: 160px; background: #EEE8AA;"></td>
-        <td id="2"style="width: 120px; height: 160px; background: #EEE8AA;"></td>
-        <td id="3"style="width: 120px; height: 160px; background: #EEE8AA;"></td>
-        <td id="4"style="width: 120px; height: 160px; background: #EEE8AA;"></td>
+        <td id="t1" style="width: 120px; height: 160px; background: #EEE8AA;">
+          <div id="d1" style="width: 120px; height: 160px; background: #FFFFFF;"></div>
+        </td>
+        <td id="t2"style="width: 120px; height: 160px; background: #EEE8AA;">
+          <div id="d2" style="width: 120px; height: 160px; background: #FFFFFF;"></div>
+        </td>
+        <td id="t3"style="width: 120px; height: 160px; background: #EEE8AA;">
+          <div id="d3" style="width: 120px; height: 160px; background: #FFFFFF;"></div>
+        </td>
+        <td id="t4"style="width: 120px; height: 160px; background: #EEE8AA;">
+          <div id="d4" style="width: 120px; height: 160px; background: #FFFFFF;"></div>
+        </td>
       </tr>
       <tr>
         <td style="width: 120px; height: 160px; background: #EEE8AA;"></td>
@@ -31,16 +39,16 @@
 </html>
 
 <script type="text/javascript">
-$("#1").click(function(){
-  $("#1").toggle();
+$("#t1").click(function(){
+  $("#d1").toggle();
 });
-$("#2").click(function(){
-  $("#2").toggle();
+$("#t2").click(function(){
+  $("#d2").toggle();
 });
-$("#3").click(function(){
-  $("#3").toggle();
+$("#t3").click(function(){
+  $("#d3").toggle();
 });
-$("#4").click(function(){
-  $("#4").toggle();
+$("#t4").click(function(){
+  $("#d4").toggle();
 });
 </script>
