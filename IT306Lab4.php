@@ -38,11 +38,11 @@ if (isset($_POST['p1'])) {
       echo "";
   }
 }
-//part1
+//part2
 if (isset($_POST['p2'])) {
   $number = $_POST['num'];
-  $area = 2*M_PI*$number;
-  $circumference = M_PI*$number*$number;
+  $area = round(2*M_PI*$number, 2);
+  $circumference = round(M_PI*$number*$number, 2);
   echo "Area is: $area, Circumreferance is $circumference";
 }
  ?>
