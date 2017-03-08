@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title></title>
     <style>
+    /*resim table'a arkaplan olarak tanımlanıyor ve table'da boyutları td, th'de verilmiş 12 hücre oluşturuluyor. yine hücre sınırları ilgili kodlar ile sıfırlanıyor.
+    hücreler içine hücrelerle aynı boyutta arkaplanı beyaz ve yine sınırları sıfırlanmış, iç kenarlıkları olan div elementleri oluşturuluyor. */
     table {
     border-collapse: collapse;
     border-spacing: 0px;
@@ -87,7 +89,7 @@ function modify_qty(val) {
 }
 /*
 $("#tx").click(function(){            (basılan html elementine göre aşağıdaki kodu çalıştırıyor)
-  if ($("#dx").is(":visible")) {  (daha önce div elementi gizlenmiş mi kontrol ediyor)
+  if ($("#dx").is(":visible")) {      (daha önce div elementi gizlenmiş mi kontrol ediyor)
       modify_qty(-1);                 (fonksiyon çalıştırarak değer düşüyor)
   }
   $("#dx").hide();                    (id'si girili div elementini hide ediyor)
