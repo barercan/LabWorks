@@ -8,7 +8,12 @@
     <form class="" action="IT306Lab4.php" method="post">
       <input type="number" name="num" value="5">
       <input type="submit" name="p1" value="Part1">
-      <input type="submit" name="p2" value="Part2">
+      <input type="submit" name="p2" value="Part2"><br>
+    </form><br>
+    <form class="" action="IT306Lab4.php" method="post">
+      <input type="number" name="num1" value="5">
+      <input type="text" name="op" value="+">
+      <input type="number" name="num2" value="5">
       <input type="submit" name="p3" value="Part3">
     </form>
   </body>
@@ -45,4 +50,21 @@ if (isset($_POST['p2'])) {
   $circumference = round(M_PI*$number*$number, 2);
   echo "Area is: $area, Circumreferance is $circumference";
 }
+//part3
+if (isset($_POST['p3'])) {
+  $number1 = $_POST['num1'];
+  $number2 = $_POST['num2'];
+  $op = $_POST['op'];
+
+  switch ($op) {
+    case '+':
+      $result = $number1+$number2;
+      break;
+
+    default:
+      echo "$op";
+      break;
+  }
+
+
  ?>
