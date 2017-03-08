@@ -5,7 +5,7 @@
     <title></title>
   </head>
   <body>
-    <form class="" action="IT306Lab3.php" method="post">
+    <form class="" action="IT306Lab4.php" method="post">
       <input type="number" name="num" value="50">
       <input type="submit" name="Gün" value="Gün Bul">
       <input type="submit" name="2ve3" value="2ve3">
@@ -16,6 +16,7 @@
 </html>
 
 <?php
+//part1
 if (isset($_POST['Gün'])) {
   $number = $_POST['num'];
   switch ($number+1) {
