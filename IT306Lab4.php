@@ -65,6 +65,6 @@ if (isset($_POST['p3'])) {
       echo "$op";
       break;
   }
-
+}
 
  ?>
