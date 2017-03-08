@@ -87,14 +87,14 @@ function modify_qty(val) {
 }
 /*
 $("#tx").click(function(){            (basılan html elementine göre aşağıdaki kodu çalıştırıyor)
-  if ($(""#dx"").is("":visible"")) {  (daha önce div elementi gizlenmiş mi kontrol ediyor)
+  if ($("#dx").is(":visible")) {  (daha önce div elementi gizlenmiş mi kontrol ediyor)
       modify_qty(-1);                 (fonksiyon çalıştırarak değer düşüyor)
   }
   $("#dx").hide();                    (id'si girili div elementini hide ediyor)
 });
 */
 $("#t1").click(function(){
-  if ($(""#d1"").is("":visible"")) {
+  if ($("#d1").is(":visible")) {
       modify_qty(-1);
   }
   $("#d1").hide();
