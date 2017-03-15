@@ -11,7 +11,7 @@
       <input type="submit" name="p3" value="Part3">
       <input type="submit" name="p1" value="Part1"><br>
     </form>
-    <form action="IT306Lab2.php" method="post">
+    <form action="IT306Lab5.php" method="post">
         Find solution for ax^2 + bx + c<br>
         a: <input type="text" name="a"><br>
         b: <input type="text" name="b"><br>
