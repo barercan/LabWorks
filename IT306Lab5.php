@@ -97,27 +97,27 @@ if (isset($_POST['p3'])) {
 
   if ($amount>250000) {
     $rate = 0.06;
-    interest($amount, $months, $rate);
+    interest($amount, $months, $rate, $year));
   }
   elseif ($amount>100000) {
     $rate = 0.055;
-    interest($amount, $months, $rate);
+    interest($amount, $months, $rate, $year));
   }
   elseif ($amount>50000) {
     $rate = 0.05;
-    interest($amount, $months, $rate);
+    interest($amount, $months, $rate, $year);
   }
   elseif ($amount>10000) {
     $rate = 0.045;
-    interest($amount, $months, $rate);
+    interest($amount, $months, $rate, $year));
   }
   else {
     $rate = 0.043;
-    interest($amount, $months, $rate);
+    interest($amount, $months, $rate, $year);
   }
 }
 
-function interest($amount, $months, $rate){
+function interest($amount, $months, $rate, $year)){
   //p*(1+r/n)^n
   $newamount = $amount*pow(1+$rate/$months, $months*$year);
   echo "$newamount";
