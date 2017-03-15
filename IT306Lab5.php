@@ -6,7 +6,7 @@
   </head>
   <body>
     <form class="" action="IT306Lab5.php" method="post">
-      <input type="number" name="num" value="Number">
+      <input type="number" name="num" value="Money">
       <input type="number" name="months" value="Months">
       <input type="submit" name="p3" value="Part3">
       <input type="submit" name="p1" value="Part1"><br><br>
@@ -47,6 +47,19 @@ if (isset($_POST['p1'])) {
     }
     $i++;
   } while($i <100);
+  //for
+  for ($i=0; $i < 100; $i++) {
+    if ($i%3 == 0){
+      ++$count;
+      echo "The $count th one is : $i <br>";
+    }
+  }
+  while ($a < 100) {
+    if ($i%3 == 0){
+      ++$count;
+      echo "The $count th one is : $i <br>";
+    }
+  }
 }
 if (isset($_POST['p2'])) {
 
