@@ -17,6 +17,11 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
+function interest($amount, $months, $rate){
+  //p*(1+r/n)^n
+  $newamount = $amount*pow(1+$rate/$months, 2);
+  echo "$newamount";
+}
 
 if (isset($_POST['p3'])) {
   $amount = $_POST['num'];
@@ -42,11 +47,7 @@ if (isset($_POST['p3'])) {
     interest($amount, $months, $rate);
   }
 
-  function interest($amount, $months, $rate){
-    //p*(1+r/n)^n
-    $newamount = $amount*pow(1+$rate/$months, 2);
-    echo "$newamount";
-  }
+
 
 }
  ?>
