@@ -57,13 +57,9 @@
         echo "<br>";
         echo "x2 = ";
         echo ((-$b - sqrt($d)) / (2*$a));
-        echo "There is 2 solution";
+        echo "There are 2 solution";
         //end of work2
 } ?>
-
-
-
-
 
     <?php
     //Start of Work3
