@@ -9,6 +9,7 @@
       <input type="number" name="num" value="Number">
       <input type="number" name="months" value="Months">
       <input type="submit" name="p3" value="Part3">
+      <input type="submit" name="p1" value="Part1">
     </form>
 
   </body>
@@ -47,13 +48,14 @@ if (isset($_POST['p1'])) {
   $x = 10;
   $y= ++$x;
   $z = $y++/$x;
-  echo "x = $x";
-  echo "y = $y and z = $z";
+  echo "x = $x<br>";
+  echo "y = $y and z = $z<br>";
   //b
   $x=10;
   $y = ($x /2==0)? "X is even" : "X is odd";
   echo "The content of y is : ";
   //c
+
 
 }
 function interest($amount, $months, $rate){
