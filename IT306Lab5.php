@@ -8,6 +8,8 @@
     <form class="" action="IT306Lab5.php" method="post">
       <input type="number" name="num" value="Money">
       <input type="number" name="months" value="Months">
+      <input type="number" name="year" value="years">
+
       <input type="submit" name="p3" value="Part3">
       <input type="submit" name="p1" value="Part1"><br><br>
     </form>
@@ -91,6 +93,8 @@ if (isset($_POST['p2'])) {
 if (isset($_POST['p3'])) {
   $amount = $_POST['num'];
   $months = $_POST['months'];
+  $months = $_POST['year'];
+
   if ($amount>250000) {
     $rate = 0.06;
     interest($amount, $months, $rate);
@@ -108,14 +112,14 @@ if (isset($_POST['p3'])) {
     interest($amount, $months, $rate);
   }
   else {
-    $rate = 0.04;
+    $rate = 0.043;
     interest($amount, $months, $rate);
   }
 }
 
 function interest($amount, $months, $rate){
   //p*(1+r/n)^n
-  $newamount = $amount*pow(1+$rate/$months, $months);
+  $newamount = $amount*pow(1+$rate/$months, $months*$year);
   echo "$newamount";
 }
  ?>
