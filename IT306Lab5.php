@@ -54,10 +54,11 @@ if (isset($_POST['p1'])) {
       echo "The $count th one is : $i <br>";
     }
   }
+  $count=0;
   while ($a < 100) {
-    if ($i%3 == 0){
+    if ($a%3 == 0){
       ++$count;
-      echo "The $count th one is : $i <br>";
+      echo "The $count th one is : $a <br>";
     }
   }
 }
