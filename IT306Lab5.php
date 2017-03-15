@@ -42,6 +42,20 @@ if (isset($_POST['p3'])) {
     interest($amount, $months, $rate);
   }
 }
+if (isset($_POST['p1'])) {
+  //a
+  $x = 10;
+  $y= ++$x;
+  $z = $y++/$x;
+  echo "x = $x";
+  echo "y = $y and z = $z";
+  //b
+  $x=10;
+  $y = ($x /2==0)? "X is even" : "X is odd";
+  echo "The content of y is : ";
+  //c
+
+}
 function interest($amount, $months, $rate){
   //p*(1+r/n)^n
   $newamount = $amount*pow(1+$rate/$months, $months);
