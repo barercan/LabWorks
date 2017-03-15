@@ -16,7 +16,7 @@
         a: <input type="text" name="a"><br>
         b: <input type="text" name="b"><br>
         c: <input type="text" name="c"><br>
-        <input type="submit" value="Find x!">
+        <input type="submit" name="p2" value="Find x!">
     </form>
 
   </body>
