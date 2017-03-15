@@ -93,7 +93,7 @@ if (isset($_POST['p2'])) {
 if (isset($_POST['p3'])) {
   $amount = $_POST['num'];
   $months = $_POST['months'];
-  $months = $_POST['year'];
+  $year = $_POST['year'];
 
   if ($amount>250000) {
     $rate = 0.06;
