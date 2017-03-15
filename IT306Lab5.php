@@ -27,23 +27,23 @@ if (isset($_POST['p3'])) {
   $amount = $_POST['num'];
   $months = $_POST['months'];
   if ($amount>250000) {
-    $rate = 6;
+    $rate = 0.06;
     interest($amount, $months, $rate);
   }
   elseif ($amount>100000) {
-    $rate = 5.5;
+    $rate = 0.055;
     interest($amount, $months, $rate);
   }
   elseif ($amount>50000) {
-    $rate = 5;
+    $rate = 0.05;
     interest($amount, $months, $rate);
   }
   elseif ($amount>10000) {
-    $rate = 4.5;
+    $rate = 0.045;
     interest($amount, $months, $rate);
   }
   else {
-    $rate = 4;
+    $rate = 0.04;
     interest($amount, $months, $rate);
   }
 
