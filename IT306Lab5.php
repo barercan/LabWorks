@@ -19,7 +19,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 function interest($amount, $months, $rate){
   //p*(1+r/n)^n
-  $newamount = $amount*pow(1+$rate/$months, 2);
+  $newamount = $amount*pow(1+$rate/$months, $months);
   echo "$newamount";
 }
 
