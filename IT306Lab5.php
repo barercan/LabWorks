@@ -15,6 +15,9 @@
 </html>
 
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
+
 if (isset($_POST['p3'])) {
   $amount = $_POST['num'];
   $months = $_POST['months'];
