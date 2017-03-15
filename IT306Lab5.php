@@ -9,7 +9,7 @@
       <input type="number" name="num" value="Number">
       <input type="number" name="months" value="Months">
       <input type="submit" name="p3" value="Part3">
-      <input type="submit" name="p1" value="Part1"><br>
+      <input type="submit" name="p1" value="Part1"><br><br>
     </form>
     <form action="IT306Lab5.php" method="post">
         Find solution for ax^2 + bx + c<br>
@@ -38,8 +38,15 @@ if (isset($_POST['p1'])) {
   $y = ($x /2==0)? "X is even" : "X is odd";
   echo "The content of y is : $y";
   //c
-
-
+  $i = 0;
+  $count=0;
+  do{
+    if ($i%3 == 0){
+      ++$count;
+      echo "The $count th one is : $i <br>";
+    }
+    $i++;
+  } while($i <100);
 }
 if (isset($_POST['p2'])) {
 
