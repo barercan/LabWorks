@@ -21,19 +21,19 @@ ini_set('display_errors', 'On');
 if (isset($_POST['p3'])) {
   $amount = $_POST['num'];
   $months = $_POST['months'];
-  if (amount>250000) {
+  if ($amount>250000) {
     $rate = 6;
     interest($amount, $months, $rate);
   }
-  elseif (amount>100000) {
+  elseif ($amount>100000) {
     $rate = 5.5;
     interest($amount, $months, $rate);
   }
-  elseif (amount>50000) {
+  elseif ($amount>50000) {
     $rate = 5;
     interest($amount, $months, $rate);
   }
-  elseif (amount>10000) {
+  elseif ($amount>10000) {
     $rate = 4.5;
     interest($amount, $months, $rate);
   }
@@ -44,7 +44,7 @@ if (isset($_POST['p3'])) {
 
   function interest($amount, $months, $rate){
     //p*(1+r/n)^n
-    $newamount = amount*pow(1+rate/months, 2);
+    $newamount = $amount*pow(1+$rate/$months, 2);
     echo "$newamount";
   }
 
