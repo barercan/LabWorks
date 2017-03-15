@@ -5,12 +5,17 @@
     <title></title>
   </head>
   <body>
+    <form class="" action="IT306Lab5.php" method="post">
+      <input type="number" name="num" value="Number">
+      <input type="number" name="months" value="Months">
+      <input type="submit" name="p3" value="Part3">
+    </form>
 
   </body>
 </html>
 
 <?php
-if (isset($_POST['3'])) {
+if (isset($_POST['p3'])) {
   $amount = $_POST['num'];
   $months = $_POST['months'];
   if (amount>250000) {
