@@ -72,6 +72,7 @@ function part3 ($number){
       $sum += $number % 10;
   }
   while ($number = (int) $number / 10);
+  return $sum;
   # code...
 }
 function part4 ($char, $x){
