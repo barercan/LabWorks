@@ -50,6 +50,7 @@ if (isset($_POST['p4'])) {
 }
 if (isset($_POST['p5'])) {
   $number = $_POST['input'];
+  echo part5($number);
   # code...
 }
 
