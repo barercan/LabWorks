@@ -6,7 +6,7 @@
   </head>
   <body>
     <form class="" action="IT306Lab6.php" method="post">
-      <input type="text" name="input" value="Input">
+      <input type="text"  name="input" value="Input">
       <input type="submit" name="p1" value="Part1">
       <input type="submit" name="p2" value="Part2">
       <input type="submit" name="p3" value="Part3">
