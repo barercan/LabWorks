@@ -31,6 +31,7 @@ $simple_array = array("dbc","bcd","abc");
 if(sort($simple_array)){
   print_r($simple_array);
 }
+echo "<br>";
 
 // set the cookies
 setcookie("cookie[three]", "cookiethree");
