@@ -15,6 +15,8 @@ $cars=array(
   array("BMW",60,59),
   array("Toyota",110,100)
 );
+
+//1B Start
 for ($row = 0; $row < 3; $row++) {
   echo "<p><b>Row number $row</b></p>";
   echo "<ul>";
@@ -23,6 +25,7 @@ for ($row = 0; $row < 3; $row++) {
   }
   echo "</ul>";
 }
+//1B End
 
 $simple_array = array("dbc","bcd","abc");
 if(sort($simple_array)){
