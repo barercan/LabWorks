@@ -16,7 +16,7 @@ $cars=array(
   array("Toyota",110,100)
 );
 
-//1B Start
+//1C Start
 for ($row = 0; $row < 3; $row++) {
   echo "<p><b>Row number $row</b></p>";
   echo "<ul>";
@@ -25,11 +25,11 @@ for ($row = 0; $row < 3; $row++) {
   }
   echo "</ul>";
 }
-//1B End
+//1C End
 
 $simple_array = array("dbc","bcd","abc");
 if(sort($simple_array)){
-  print_r($simpl_array);
+  print_r($simple_array);
 }
 
 // set the cookies
