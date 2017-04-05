@@ -32,6 +32,6 @@ if (isset($_POST["submit"])) {
     $array[$N] = rand(1,1000);
   }
   $sortedarray = bubbleSort($array);
-  printArray("$sortedarray");
+  print_r($sortedarray);
 }
  ?>
