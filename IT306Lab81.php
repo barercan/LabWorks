@@ -18,6 +18,8 @@ if (isset($_POST["submit"])) {
   $N = $_POST["sayi"];
   require("IT306Lab82.php");
   $array = generateRNum($N);
+  print_r($array);
   $sortedarray = selectionSort($array);
+  print_r($sortedarray);
   printArr($sortedarray, $N);
 } ?>
