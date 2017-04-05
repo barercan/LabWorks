@@ -4,8 +4,8 @@ ini_set('display_errors', 'On');
 function generateRNum ($N){
   for ($i=0; $i < $N ; $i++) {
     $array[$i] = rand(1,1000);
-    return $array;
   }
+  return $array;
 }
 function selectionSort(array $array) {
     $length = count($array);
