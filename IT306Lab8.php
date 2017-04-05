@@ -25,13 +25,28 @@ function bubbleSort(array $array) {
     }
     return $array;
 }
+function selectionSort(array $array) {
+    $length = count($array);
+    for($i = 0; $i < $length; $i ++) {
+        $min = $i;
+        for($j = $i + 1; $j < $length; $j ++) {
+            if ($array[$j] < $array[$min]) {
+                $min = $j;
+            }
+        }
+        $tmp = $array[$min];
+        $array[$min] = $array[$i];
+        $array[$i] = $tmp;
+    }
+    return $array;
+}
 
 if (isset($_POST["submit"])) {
   $N = $_POST["sayi"];
   for ($i=0; $i < $N ; $i++) {
     $array[$N] = rand(1,1000);
   }
-  $sortedarray = bubbleSort($array);
+  $sortedarray = selectionSort($array);
   for ($i=0; $i < $N ; $i++) {
     echo "$sortedarray[$N]<br>";
   }
