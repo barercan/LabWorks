@@ -12,19 +12,6 @@
   </body>
 </html>
 <?php
-function bubbleSort(array $array) {
-    $array_size = count($array);
-    for($i = 0; $i < $array_size; $i ++) {
-        for($j = 0; $j < $array_size; $j ++) {
-            if ($array[$i] < $array[$j]) {
-                $tem = $array[$i];
-                $array[$i] = $array[$j];
-                $array[$j] = $tem;
-            }
-        }
-    }
-    return $array;
-}
 function selectionSort(array $array) {
     $length = count($array);
     for($i = 0; $i < $length; $i ++) {
