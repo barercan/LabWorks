@@ -22,7 +22,7 @@ function selectionSort(array $array) {
     }
     return $array;
 }
-function printArr(array $sortedarray){
+function printArr(array $sortedarray, $N){
   for ($i=0; $i < $N ; $i++) {
     echo "$sortedarray[$i]<br>";
   }
