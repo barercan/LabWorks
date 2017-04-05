@@ -12,6 +12,8 @@
   </body>
 </html>
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
 if (isset($_POST["submit"])) {
   $N = $_POST["sayi"];
   require("IT306Lab82.php");
