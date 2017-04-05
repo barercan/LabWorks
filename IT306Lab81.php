@@ -19,5 +19,5 @@ if (isset($_POST["submit"])) {
   require("IT306Lab82.php");
   $array = generateRNum($N);
   $sortedarray = selectionSort($array);
-  printArr($sortedarray);
+  printArr($sortedarray, $N);
 } ?>
