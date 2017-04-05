@@ -44,11 +44,11 @@ function selectionSort(array $array) {
 if (isset($_POST["submit"])) {
   $N = $_POST["sayi"];
   for ($i=0; $i < $N ; $i++) {
-    $array[$N] = rand(1,1000);
+    $array[$i] = rand(1,1000);
   }
   $sortedarray = selectionSort($array);
   for ($i=0; $i < $N ; $i++) {
-    echo "$sortedarray[$N]<br>";
+    echo "$sortedarray[$i]<br>";
   }
 }
  ?>
