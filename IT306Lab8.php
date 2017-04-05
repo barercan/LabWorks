@@ -16,7 +16,7 @@ if (isset($_POST["submit"])) {
   $N = $_POST["sayi"];
   for ($i=0; $i < $N ; $i++) {
     $array[$N] = rand(1,1000);
-    echo "$array[$N]";
+    echo "$array[$N]<br>";
   }
 }
  ?>
